@@ -1,0 +1,3 @@
+debian/infinitetux.desktop usr/share/applications
+debian/infinitetux.metainfo.xml usr/share/metainfo
+debian/icons/infinitetux.png usr/share/icons/hicolor/256x256/apps

@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DINFINITE_TUX_DATADIR=/usr/share/games/infinitetux/
+
+override_dh_auto_install:
+	dh_auto_install
+	# Replace placeholder soundfont with a symlink to system FluidR3_GM (from fluid-soundfont-gm)
+	rm -f debian/tmp/usr/share/games/infinitetux/resources/soundfonts/soundbank-deluxe.gm || true

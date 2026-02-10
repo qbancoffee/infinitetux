@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+# Ensure binary runs and prints help without needing graphics/audio.
+infinitetux --help >/dev/null

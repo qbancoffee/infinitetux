@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Infinite Tux
+Comment=Infinite side-scrolling platform game
+Exec=infinitetux
+Path=/usr/share/games/infinitetux
+Icon=infinitetux
+Categories=Game;ArcadeGame;
+Terminal=false
+

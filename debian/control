@@ -1,0 +1,40 @@
+Source: infinitetux
+Section: games
+Priority: optional
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders:
+ qbancoffee <qbancoffee@yahoo.com>
+Standards-Version: 4.6.2
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ pkgconf,
+ libsdl2-dev,
+ libsdl2-image-dev,
+ libsdl2-mixer-dev
+Homepage: https://github.com/qbancoffee/infinite-tux
+Vcs-Git: https://salsa.debian.org/games-team/infinitetux.git
+Vcs-Browser: https://salsa.debian.org/games-team/infinitetux
+
+Package: infinitetux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, fluid-soundfont-gm
+Suggests: fluid-soundfont-gs
+Description: 2D platformer inspired by Infinite Mario (native SDL2 edition)
+ Infinite Tux is a retro-style 2D platformer inspired by Infinite Mario.
+ This edition is a C++ port of the original Java version, built on SDL2
+ with full gamepad support.
+ .
+ The game is procedurally generated every time it is replayed, so
+ you always play a different game.
+ You can break blocks, run fast, collect coins and get one-ups.
+ Run through the levels stepping on enemies and spitting colorful
+ spit balls to kill them. Carry de-hatched chick eggs and launch
+ them towards other enemies to kill them too!
+ .
+ Features include configurable keyboard and gamepad controls, multiple
+ MIDI synthesizer backends, fullscreen mode, and user-customizable assets.
+ .
+ Infinite Tux recreates the feel of those fun 1980's platformer games
+ that kept people sitting in front of their CRT television sets for
+ hours on end. Have fun and enjoy this 8-bit retro style game!

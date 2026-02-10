@@ -1,0 +1,124 @@
+.TH INFINITETUX 6
+.SH NAME
+infinitetux \- retro 2D platformer with procedurally generated levels (native SDL2 edition)
+.SH SYNOPSIS
+.B infinitetux
+.RI [ options ]
+.SH DESCRIPTION
+.B Infinite Tux
+is a C++ port of the original Java platformer, built on SDL2 with full gamepad support.
+It is inspired by Markus "Notch" Persson's public-domain
+\fIInfinite Mario Bros.\fR, re-themed with Tux and free assets.
+Each run generates new levels, so playthroughs vary even with the same settings.
+.PP
+The game ships with system-wide assets under
+.IR /usr/share/games/infinitetux/ ,
+and can optionally load override assets from the per-user data directory (see
+.BR FILES ).
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Show a help/usage summary and exit.
+.TP
+.BR \-d ", " \-\-debug
+Enable debug output (for example, spawn messages and collision information).
+.TP
+.BR \-t ", " \-\-test
+Enable test mode (see
+.BR "TEST MODE" ).
+.TP
+.BR \-\-default
+Use the default input bindings and ignore any saved bindings/configuration.
+Use this if custom bindings become unusable.
+.SH CONTROLS
+.SS Gameplay
+.TP
+.B Arrow keys
+Move left/right; climb vines; duck (Down).
+.TP
+.BR A " / " Z
+Jump (hold longer to jump higher).
+.TP
+.BR S " / " X
+Run (hold while moving); shoot fireballs; pick up/hold shells (hold while stomping).
+.TP
+.B Enter
+Pause/unpause.
+.TP
+.B Escape
+Quit.
+.TP
+.B F9
+Cycle MIDI synth backend (Default/Native/FluidSynth), if available.
+.TP
+.B F10
+Cycle scale quality (Nearest/Linear/Best).
+.TP
+.B F11
+Toggle fullscreen.
+.SS Menus
+.TP
+.B Arrow keys
+Navigate menu options.
+.TP
+.BR A " / " Z " / " Enter
+Select the current option.
+.SS Gamepad
+Gamepads are automatically detected. Configure bindings via the Options menu.
+.TP
+.B D-pad / Left Stick
+Move; navigate menus.
+.TP
+.B A button
+Jump; select.
+.TP
+.B B / X button
+Run; fire; back.
+.TP
+.B Start
+Pause.
+.SH TEST MODE
+Test mode is intended for development and level experimentation:
+.IP \(bu 2
+The player is invincible (toggle with the backtick key \fB`\fR).
+.IP \(bu 2
+Time does not run out.
+.IP \(bu 2
+Debug messages are enabled.
+.IP \(bu 2
+A special test map provides access to all level types.
+.PP
+Additional test keys:
+.TP
+.B I
+Make the player small.
+.TP
+.B O
+Make the player big.
+.TP
+.B P
+Give fire power.
+.TP
+.BR 0 \- 9
+Spawn an enemy at the player's position:
+0=Goomba, 1=Green Koopa, 2=Red Koopa, 3=Spiky,
+4=Winged Goomba, 5=Winged Green Koopa,
+6=Winged Red Koopa, 7=Winged Spiky,
+8=Shell, 9=Bullet Bill.
+.SH FILES
+.TP
+.I /usr/share/games/infinitetux/
+System-wide game data installed by the package (read-only).
+.TP
+.I ~/.local/share/infinitetux/
+Per-user data directory (created on first run if needed). Used for saved settings
+and optional per-user asset overrides. If
+.B XDG_DATA_HOME
+is set, the directory is instead:
+.IR $XDG_DATA_HOME/infinitetux/ .
+.SH SEE ALSO
+.BR sdl2 (7),
+.BR fluidsynth (1)
+.SH AUTHORS
+This port and Debian packaging are maintained by the Infinite Tux contributors.
+The original inspiration is the public-domain Java source by Markus "Notch" Persson.

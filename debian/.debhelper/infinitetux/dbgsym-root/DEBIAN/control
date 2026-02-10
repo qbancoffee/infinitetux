@@ -1,0 +1,13 @@
+Package: infinitetux-dbgsym
+Package-Type: ddeb
+Source: infinitetux
+Version: 1.0.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 1190
+Depends: infinitetux (= 1.0.1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for infinitetux
+Build-Ids: 94ca28c3975c4d1ea8c6e38c313ef36ccc6768b0
