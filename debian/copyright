@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: infinitetux
 Upstream-Contact: qbancoffee <qbancoffee@yahoo.com>
-Source: https://github.com/qbancoffee/infinite-tux
+Source: https://github.com/qbancoffee/infinitetux
 
 Files: resources/bgsheet.png
        resources/enemysheet.png

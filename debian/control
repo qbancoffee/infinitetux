@@ -12,7 +12,7 @@ Build-Depends:
  libsdl2-dev,
  libsdl2-image-dev,
  libsdl2-mixer-dev
-Homepage: https://github.com/qbancoffee/infinite-tux
+Homepage: https://github.com/qbancoffee/infinitetux
 Vcs-Git: https://salsa.debian.org/games-team/infinitetux.git
 Vcs-Browser: https://salsa.debian.org/games-team/infinitetux
 

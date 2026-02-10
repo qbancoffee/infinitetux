@@ -7,7 +7,7 @@ Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libsdl2-2.0-0 (>= 2.0.12), libsd
 Suggests: fluid-soundfont-gs
 Section: games
 Priority: optional
-Homepage: https://github.com/qbancoffee/infinite-tux
+Homepage: https://github.com/qbancoffee/infinitetux
 Description: 2D platformer inspired by Infinite Mario (native SDL2 edition)
  Infinite Tux is a retro-style 2D platformer inspired by Infinite Mario.
  This edition is a C++ port of the original Java version, built on SDL2

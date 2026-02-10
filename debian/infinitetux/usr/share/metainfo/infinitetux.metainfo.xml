@@ -57,8 +57,8 @@
 	<provides>
 		<id>infinitetux.desktop</id>
 	</provides>
-  <url type="homepage">https://github.com/qbancoffee/infinite-tux</url>
-  <url type="bugtracker">https://github.com/qbancoffee/infinite-tux/issues</url>
+  <url type="homepage">https://github.com/qbancoffee/infinitetux</url>
+  <url type="bugtracker">https://github.com/qbancoffee/infinitetux/issues</url>
     <content_rating type="oars-1.1">
    </content_rating>
 <releases>
