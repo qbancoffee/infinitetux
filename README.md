@@ -1,4 +1,4 @@
-# Infinite Tux v1.0.1 — Native SDL2 Edition
+# Infinite Tux v1.0.1  Native SDL2 Edition
 
 A C++ port of the original Java-based Infinite Tux, inspired by Notch's Infinite Mario Bros.
 Built on SDL2 with full gamepad support.
