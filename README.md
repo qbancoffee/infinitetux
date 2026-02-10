@@ -2,6 +2,8 @@
 
 A C++ port of the original Java-based Infinite Tux, inspired by Notch's Infinite Mario Bros.
 Built on SDL2 with full gamepad support.
+Despite the names of some of the files, there are no proprietary assets in this repository, all assets
+absolutely free and open source.
 
 This is a debianized source package that can be built using standard Debian packaging tools.
 
