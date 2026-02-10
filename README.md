@@ -228,7 +228,7 @@ infinite-tux/
 
 This project is licensed under GPL-3+.
 
-Original game logic by Markus Persson (public domain), modified by Chris Lewis (BSD-3-Clause).
+Original game logic by Markus Persson (public domain).
 C++ port and Tux sprites by Pedro Pena and contributors.
 
 See `debian/copyright` for detailed licensing information for all assets.
