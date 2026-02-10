@@ -27,6 +27,8 @@ Build an installable `.deb` package using standard Debian tools:
 # Install build dependencies
 sudo apt-get install build-essential debhelper cmake \
     libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
+# tar
+tar --exclude='./debian' -czf ../infinitetux_1.0.1.orig.tar.gz .
 
 # Build the package
 dpkg-buildpackage -us -uc
